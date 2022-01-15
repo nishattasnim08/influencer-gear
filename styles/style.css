@@ -1,0 +1,243 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+/* fonts */
+/* common css part start */
+body{
+    background-color: lavender;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 80%;
+    padding: 30px;
+}
+/* common css part end */
+
+/* menu item start */
+.menu_items{
+    display: flex;
+    justify-items: center;
+}
+.menu_icon{
+    display: flex;
+}
+.menu_items p{
+    padding-left: 20px;
+}
+/* menu item end */
+
+/* intro part css start */
+.intro_part{
+    display: flex;
+}
+.intro_text{
+    width: 50%;
+    text-align: justify;
+    padding-right: 30px;
+}
+.intro_text button{
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+}
+.intro_text button i{
+    padding-left: 5px;
+    font-weight: 400;
+}
+h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+.intro_img img{
+    background-image: url(../images/Circle\ design.svg);
+}
+.intro_img img:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+/* intro part css end */
+
+/* company logo css start */
+hr{
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+}
+.logo_part{
+    width: 100%;
+}
+.logo_imges{
+    display: flex;
+    justify-content: space-between;
+}
+/* company logo css end */
+
+/* product part css start */
+.product_div{
+    display: block;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.product{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #888;
+    overflow: hidden;
+}
+.product:hover{
+    transform: scale(1.02);
+    transition: transform 1s ease-in-out;
+}
+.product_img img{
+    width: 100%;
+}
+.product_details{
+    padding: 0 20px;
+}
+.product_details h4{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.product_details h5{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.product_details p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #aeaeae;
+}
+/* product part css end */
+
+/* bonus part css start */
+ul{
+    padding-left: 20px;
+}
+.skill_part{
+    margin-bottom: 60px auto;
+    width: 100%;
+}
+.skill_part li{
+    list-style: none;
+    margin: 20px 0;
+    width: 100%;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+    margin: 10px 0;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 95%;
+    animation: css 2s;
+
+}
+.jquery{
+    width: 70%;
+    animation: jquery 2s;
+}
+.javascript{
+    width: 60%;
+    animation: javascript 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes jquery {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.skill_part h2 span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.skill_part h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* bonus part css end */
+
+/* footer part css start */
+footer{
+    background-color: #0a0826;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+footer .fab{
+    color: white;
+    padding: 0 5px;
+}
+/* footer part css end */
