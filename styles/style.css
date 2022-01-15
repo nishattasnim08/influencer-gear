@@ -241,3 +241,30 @@ footer .fab{
     padding: 0 5px;
 }
 /* footer part css end */
+
+/* media query part start */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* media query part end */
