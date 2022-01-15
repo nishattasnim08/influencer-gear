@@ -37,12 +37,14 @@ main{
 
 /* intro part css start */
 .intro_part{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
 }
 .intro_text{
-    width: 50%;
-    text-align: justify;
-    padding-right: 30px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
 }
 .intro_text button{
     background-color: #E02C6D;
@@ -61,6 +63,7 @@ h1{
 }
 .intro_img img{
     background-image: url(../images/Circle\ design.svg);
+    margin-left: 20px;
 }
 .intro_img img:hover{
     transform: scale(1.05);
@@ -247,7 +250,7 @@ footer .fab{
     .container{
         width: 100%;
     }
-    .products{
+    .intro_part, .products{
         grid-template-columns: repeat(1, 1fr);
     }
     .product{
@@ -258,6 +261,9 @@ footer .fab{
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container{
         width: 100%;
+    }
+    .intro_part{
+        grid-template-columns: repeat(1, 1fr);
     }
     .products{
         grid-template-columns: repeat(2, 1fr);
